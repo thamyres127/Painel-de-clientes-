@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Clientes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>Painel de Clientes</h1>
+      <p>Consulte ou filtre um cliente cadastrado.</p>
+    </header>
+
+    <main class="app-content">
+      <div class="search-container">
+        <input id="searchInput" class="search-input" type="search" placeholder="Buscar clientes pelo nome..." autocomplete="off">
+      </div>
+
+      <div id="statusMessage" class="status-message">Carregando dados dos clientes...</div>
+
+      <section id="content" hidden>
+        <div class="chart-container">
+          <h2>Distribuição de Clientes por Cidade</h2>
+          <div id="cityChart" class="city-chart" aria-label="Distribuição de clientes por cidade"></div>
+        </div>
+
+        <section id="clientGrid" class="client-grid"></section>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
